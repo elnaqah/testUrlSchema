@@ -20,6 +20,8 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    func peroformeSuge(){
+        self.performSegueWithIdentifier("secondScreen", sender: self);
+    }
 }
 

@@ -193,6 +193,7 @@
 				TargetAttributes = {
 					C1C4D4541D16AF77005C8B3D = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = SVVL6CXM23;
 					};
 					C1C4D4681D16AF77005C8B3D = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -401,6 +402,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = testUrlScheme/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.testUrlScheme;
@@ -412,6 +414,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = testUrlScheme/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.testUrlScheme;
@@ -484,6 +487,7 @@
 				C1C4D47F1D16AF77005C8B3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C1C4D4801D16AF77005C8B3D /* Build configuration list for PBXNativeTarget "testUrlSchemeTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +496,7 @@
 				C1C4D4821D16AF77005C8B3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C1C4D4831D16AF77005C8B3D /* Build configuration list for PBXNativeTarget "testUrlSchemeUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +505,7 @@
 				C1C4D4851D16AF77005C8B3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
         return true
     }
 
@@ -41,6 +42,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    func application(application: UIApplication, handleOpenURL url: NSURL) -> Bool {
+        print(url);
+
+        let component = url.absoluteString.componentsSeparatedByString("://");
+
+        let arrgument = component[1];
+        
+        //navigation handling
+        let navigation = self.window?.rootViewController as? UINavigationController;
+        navigation?.popToRootViewControllerAnimated(true);
+        let firstPage = navigation?.viewControllers[0] as? ViewController;
+        
+        //switch on cases of url sent
+        switch arrgument {
+        case "page2":
+            firstPage?.peroformeSuge();
+        default:
+            print("do nothing");
+        }
+        return true;
+    }
 
 }
 
